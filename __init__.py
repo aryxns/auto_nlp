@@ -1,0 +1,1 @@
+from auto_nlp.aspect import main
