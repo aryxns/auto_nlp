@@ -1,23 +1,24 @@
-import pandas as pd
-import numpy as np
-import nltk
-from nltk.corpus import stopwords
-from nltk.corpus import wordnet
-from nltk.tokenize import word_tokenize, sent_tokenize
-from nltk.stem.wordnet import WordNetLemmatizer 
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('stopwords')
-import subprocess
+if __name__ == '__main__':
+    import pandas as pd
+    import numpy as np
+    import nltk
+    from nltk.corpus import stopwords
+    from nltk.corpus import wordnet
+    from nltk.tokenize import word_tokenize, sent_tokenize
+    from nltk.stem.wordnet import WordNetLemmatizer 
+    nltk.download('punkt')
+    nltk.download('averaged_perceptron_tagger')
+    nltk.download('stopwords')
+    import subprocess
 
-def install(name):
-    subprocess.call(['pip', 'install', name])
-    
-install('stanza')
-    
-import stanza
-stanza.download('en')
-nlp = stanza.Pipeline('en')
+    def install(name):
+        subprocess.call(['pip', 'install', name])
+
+    install('stanza')
+
+    import stanza
+    stanza.download('en')
+    nlp = stanza.Pipeline('en')
 
 
 class Aspect:
