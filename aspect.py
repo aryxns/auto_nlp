@@ -8,20 +8,11 @@ from nltk.stem.wordnet import WordNetLemmatizer
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('stopwords')
-import subprocess
-
-def install(name):
-    subprocess.call(['pip', 'install', name])
-
-install('stanza')
-
-import stanza
-stanza.download('en')
-nlp = stanza.Pipeline('en')
 
 
 class Aspect:
-    def recognizer(txt):
+    def recognizer(txt, nlp):
+        nlp = nlp
         txt = txt.lower()
         sentList = nltk.sent_tokenize(txt)
         for line in sentList:
