@@ -1,3 +1,17 @@
+import pandas as pd
+import numpy as np
+import nltk
+from nltk.corpus import stopwords
+from nltk.corpus import wordnet
+from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.stem.wordnet import WordNetLemmatizer 
+nltk.download('punkt')
+import stanza
+stanza.download('en')
+nlp = stanza.Pipeline('en')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('stopwords')
+
 class Aspect:
     def recognizer(txt):
         nlp = stanza.Pipeline('en')
