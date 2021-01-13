@@ -22,7 +22,6 @@ nlp = stanza.Pipeline('en')
 
 class Aspect:
     def recognizer(txt):
-        nlp = stanza.Pipeline('en')
         txt = txt.lower()
         sentList = nltk.sent_tokenize(txt)
         for line in sentList:
