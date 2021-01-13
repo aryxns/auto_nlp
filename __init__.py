@@ -1,1 +1,1 @@
-from auto_nlp.aspect import main
+from aspect import Aspect
