@@ -1,6 +1,6 @@
 # Auto-NLP
 
-[![Build Status](https://pypi.org/project/auto-nlp/)]
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://pypi.org/project/auto-nlp/)
 
 Auto-NLP is a stack of open source NLP tools for devs and SEs to integrate into their projects. 
 
